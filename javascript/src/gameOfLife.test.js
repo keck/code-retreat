@@ -17,46 +17,46 @@ describe('Game of life', () => {
     describe('with one live neighbor', () => {
       const neighbors = [ living(), dead(), dead(), dead() ]
 
-      xit('dies, as if by underpopulation', () => {
+      it('dies, as if by underpopulation', () => {
         expect(lives(cell, neighbors)).toEqual(false)
       })
     })
     describe('with two live neighbors', () => {
       const neighbors = [ living(), living(), dead(), dead() ]
 
-      xit('lives on to the next generation.', () => {
+      it('lives on to the next generation.', () => {
         expect(lives(cell, neighbors)).toEqual(true)
       })
     })
     describe('with three live neighbors', () => {
-      xit('lives on to the next generation.', () => {
+      it('lives on to the next generation.', () => {
       })
     })
     describe('with four live neighbors', () => {
-      xit('dies, as if by overpopulation', () => {
+      it('dies, as if by overpopulation', () => {
       })
     })
   })
 
   describe('Any dead cell', () => {
     describe('with zero live neighbors', () => {
-      xit('remains dead', () => {
+      it('remains dead', () => {
       })
     })
     describe('with one live neighbor', () => {
-      xit('remains dead', () => {
+      it('remains dead', () => {
       })
     })
     describe('with two live neighbors', () => {
-      xit('lives on to the next generation.', () => {
+      it('lives on to the next generation.', () => {
       })
     })
     describe('with three live neighbors', () => {
-      xit('lives on to the next generation.', () => {
+      it('lives on to the next generation.', () => {
       })
     })
     describe('with four live neighbors', () => {
-      xit('dies, as if by overpopulation', () => {
+      it('dies, as if by overpopulation', () => {
       })
     })
   })
